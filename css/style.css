@@ -1,0 +1,453 @@
+/* General */
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;  
+}
+
+/* Imagen para el index, acerca, portafolio, contacto */
+body {
+    background-image: url("img/dark2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Menú para el index, acerca, portafolio, contacto */
+.lista {
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+.lista i {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+.lista a {
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    margin-left: 4px;
+}
+a:hover {
+    color: #ffb400;
+    font-size: 16px;
+}
+#btn-click {
+    background-color: white;
+    opacity: 0.4;
+    width: 50px;
+    padding: 10px;
+    border-radius: 30px;
+    color: black;
+    font-size: 35px;
+    margin-left: 30px;    
+    margin-bottom: 50px;
+}
+#btn-click:hover {
+    background-color: transparent;
+    opacity: 0.8;
+    color: white;
+    cursor: pointer;
+}
+#submenu {
+    display: none;
+}
+.lista li {
+    list-style: none;    
+}
+#btn-close {
+    color: #ffb400;
+    font-size: 30px;
+    cursor: pointer;
+}
+@media (min-width: 768px) and (max-width: 1024px) {  
+    .sm-imagen {
+        margin-left: 20%;
+    }
+    .sm-text-one {
+        margin-left: 30%;
+        margin-bottom: 15%;
+    }
+}
+@media (min-width: 576px) and (max-width: 768px) {  
+    .sm-imagen {
+        margin-left: 15%;
+    }
+    .sm-text-one {
+        position: relative;
+        left: 20%;
+    }
+}
+@media (max-width: 576px) {  
+    .sm-imagen {
+        margin-right: 20%;
+    }
+    .sm-text-one {
+        padding: 35px;
+        margin-left: 10%;
+    }
+}
+
+/* Caja imagen */
+.imagen img {
+    width: 350px;
+    height: 600px;
+}
+.imagen {
+    /* width: 35%; */
+    text-align: right;
+    margin-top: 20px;
+}
+
+/* Caja texto */
+.text-one {
+    text-align: left;
+    margin-top: 20px;
+}
+.text-one h1, p, a {
+    margin-left: 1.2%;
+    margin-right: 70px;
+}
+.text-one h1 {
+    margin-top: 30%;
+    margin-bottom: 5%;
+    color: #ffb400;
+    font-size: 48px;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+}
+.text-one p {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+.text-one i {
+    margin-top: 50px;
+    margin-left: 15%;
+    font-size: 40px;
+    color: #ffb400;
+}
+.text-one i:hover {
+    font-size: 45px;
+    color: white;
+}
+
+/* Acerca.html */
+
+/* Container título */
+.titulo {
+    text-align: center;
+    padding: 20px;
+}
+.title-a {
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: bolder;   
+}
+.title-b{
+    color: #ffb400;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+}
+
+/* container-foto y datos */
+.container-foto {
+    padding: 30px;
+}
+.foto, .datos {  
+    padding-bottom: 30px;  
+    border-bottom: solid 1px gray;
+}
+.foto img {
+    width: 300px;
+    height: 500px;
+    margin-top: 40px;
+    margin-left: 200px;
+}
+.datos {
+    padding-top: 100px;
+}
+.datos p{
+    color: white;
+    margin-bottom: 20px;
+}
+.datos a {
+    background-color: transparent;
+    border: solid 3px #ffb400;
+    color: #ffb400;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px; 
+    line-height: 70px; /*para separar entre líneas*/
+}
+.datos a:hover {
+    border: solid 3px white;
+    color: white;
+}
+@media (min-width: 768px) and (max-width: 1024px) {  
+    .foto {
+        margin-left: 5%;
+        border-bottom: none;
+    }
+    .datos {
+        margin-left: 5%;
+        border-bottom: none;
+    }
+}
+@media (min-width: 576px) and (max-width: 768px) {  
+    .box-foto-datos {
+        display: inline-block;        
+    }
+    .foto {
+        margin-left: -20%;
+        border-bottom: none;
+    }
+    .datos {
+        margin-left: 8%;
+        border-bottom: none;
+    }
+    .datos a {
+        font-size: 15px;
+    }
+}
+@media (max-width: 576px) {  
+    .foto {
+        border-bottom: none;
+    }
+    .foto img{
+        padding: 0;
+        margin-left: 15px;
+        border-bottom: none;
+    }
+    .datos {
+        margin-left: 8%;
+        border-bottom: none;
+    }
+    .datos a {
+        font-size: 11px;
+    }
+    .box-abilities {
+        display: flex;
+        flex-direction: column;
+        line-height: 35px;
+    }
+}
+
+/* container educación y experiencia */
+.container-education-experience {
+    padding: 30px;
+}
+.box-edu-exp h3 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+.box-edu-exp p {
+    color: white;
+    margin-left: 40px;
+    border-left: solid 3px #ffb400;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+.box-edu-exp h5 {
+    color: #ffb400;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+.box-edu-exp i {
+    font-size: 20px;
+    margin-right: 10px;    
+}
+
+/* container habilidades */
+.container-abilities {
+    padding: 40px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+.box-abilities {
+    padding: 30px;
+}
+.container-abilities h3 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.container-abilities span {
+    color: white;
+    font-size: 20px;
+    margin-right: 20px;
+}
+.container-abilities i {
+    color: #ffb400;
+    margin-right: 10px;
+}
+
+/* portafolio.html */
+
+/* portafolio */
+.card {       
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.card-one {
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: background-color, width, height 0.5s;
+}
+.card-one img {
+    width: 244px;
+    height: 344px;
+    border-radius: 10px;
+    box-shadow: 5px 8px 5px 0px rgba(0,0,0,0.64);
+}
+.card-one a {
+    background-color: #ffb400;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 30px 10px 30px;
+    border-radius: 10px;
+    margin-left: 70px;
+    transition: background-color, color 0.5s;
+}
+.card-one img:hover {
+    opacity: 0.8;
+    width: 245px;
+    height: 345px;
+}
+.card-one>a:hover {
+    background-color: white;
+    color: #ffb400;
+}
+
+/* Contacto.html */
+.contacto {
+    text-align: left;
+    padding: 100px 50px 80px 160px;
+}
+.contacto h4 {
+    font-size: 20px;
+    color: #838290;
+}
+.contacto i {
+    color: #ffb400;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+}
+.contacto p {
+    color: white;
+    font-size: 20px;
+}
+.formulario {
+    padding: 80px 50px 40px 0px;
+}
+.formulario p {
+    color: white;
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+.formulario form input {
+    background-color: transparent;
+    border: solid 1px lightslategray;
+    width: 300px;
+    padding: 15px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    font-size: 15px;
+}
+.formulario textarea {
+    background-color: transparent;
+    width: 610px;
+    border: solid 1px lightslategray;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 15px;
+}
+.formulario .bottom {
+    background-color: #ffb400;
+    width: 200px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {  
+    .box-contacto {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contacto {
+        position: relative;
+        left: -10%;
+    }
+    .formulario {
+        position: relative;
+        left: 10%;
+    }
+    .formulario textarea {
+        width: 100%;
+    }
+}
+@media (min-width: 576px) and (max-width: 768px) {  
+    .box-contacto {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contacto {
+        position: relative;
+        left: -10%;
+    }
+    .formulario {
+        position: relative;
+        left: 10%;
+    }
+    .formulario textarea {
+        width: 100%;
+    }
+}
+@media (max-width: 576px) {  
+    .box-contacto {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contacto {
+        padding: 0;
+        margin-left: 10%;
+    }
+    .formulario {
+        position: relative;
+        left: 10%;
+    }
+    .formulario textarea {
+        width: 100%;
+    }
+}
