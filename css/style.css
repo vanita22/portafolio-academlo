@@ -313,31 +313,65 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
+    margin-top: 5%;
 }
-.card-one {
+.box-center {
+    display: flex;
     text-align: center;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    transition: background-color, width, height 0.5s;
+    justify-content: center;
 }
-.card-one img {
+.card-one {        
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 244px;
     height: 344px;
     border-radius: 10px;
-    box-shadow: 5px 8px 5px 0px rgba(0,0,0,0.64);
+    box-shadow: 5px 8px 5px 0px rgba(0,0,0,0.64);    
+    margin-bottom: 30px;
+    transition: background-color, width, height 0.5s;
+}
+.imagen-1 {
+    background-image: url(https://images.pexels.com/photos/3722196/pexels-photo-3722196.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);    
+}
+.imagen-2 {
+    background-image: url(https://images.pexels.com/photos/5322515/pexels-photo-5322515.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);    
+}
+.imagen-3 {
+    background-image: url(https://images.pexels.com/photos/3112898/pexels-photo-3112898.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);    
+}
+.imagen-4 {
+    background-image: url(https://images.pexels.com/photos/2542012/pexels-photo-2542012.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);    
+}
+.imagen-5 {
+    background-image: url(https://images.pexels.com/photos/1841709/pexels-photo-1841709.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);    
+}
+.imagen-6 {
+    background-image: url(https://images.pexels.com/photos/3013982/pexels-photo-3013982.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);    
+}
+.imagen-7 {
+    background-image: url(https://images.pexels.com/photos/1787034/pexels-photo-1787034.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);    
+}
+.imagen-8 {
+    background-image: url(https://images.pexels.com/photos/3588998/pexels-photo-3588998.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);    
+}
+.imagen-9 {
+    background-image: url(https://images.pexels.com/photos/4110334/pexels-photo-4110334.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);    
 }
 .card-one a {
     background-color: #ffb400;
+    width: 100px;
+    height: 50px;
     color: white;
     font-size: 20px;
     text-decoration: none;
     padding: 10px 30px 10px 30px;
     border-radius: 10px;
-    margin-left: 70px;
+    margin-left: 25%;
+    margin-top: 80%;
     transition: background-color, color 0.5s;
 }
-.card-one img:hover {
-    opacity: 0.8;
+.card-one:hover {
+    opacity: 0.6;
     width: 245px;
     height: 345px;
 }
@@ -450,4 +484,13 @@ a:hover {
     .formulario textarea {
         width: 100%;
     }
+}
+footer {
+    padding: 2%;
+}
+footer h4 {
+    color: white;
+}
+footer i {
+    color: #ffb400;
 }
