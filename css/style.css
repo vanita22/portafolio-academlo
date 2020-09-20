@@ -501,6 +501,8 @@ a:hover {
         width: 100%;
     }
 }
+
+/* Pie de página */
 footer {
     display: flex;
     text-align: center;
